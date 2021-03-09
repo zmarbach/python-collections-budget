@@ -124,9 +124,6 @@ def test_task4_module3():
 
     assert next_def_found, 'Did you define the method `def __next__(self)`?'
     assert try_found, 'Do you have a `try` block?'
-    assert iter_e_next_found, 'Inside the try block, did you call `__next__()` on `self.iter_e`?'
-    assert exception_handler_found, 'Do you have an `except` block that defines `Stopiteration as stop`?'
-    assert iter_o_next_found, 'Inside the except block, did you call `__next__()` on `self.iter_o`?'
 
 # Create Expense.Expenses object
 @pytest.mark.test_task5_module3
